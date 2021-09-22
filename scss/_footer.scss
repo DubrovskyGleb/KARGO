@@ -1,0 +1,48 @@
+.space__footer{
+    width: 100%;
+    background-color: $black;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 40px 0;
+    &__logo{
+        display: flex;
+        align-items: center;
+        width: 275px;
+        height: 60px;
+        margin: 40px 10px 0 10px;
+        img{
+            width: 275px;
+            height: auto;
+        }
+    }
+    &__buttons{
+        margin: 40px 10px 0 10px;
+    }
+    &__contact{
+        margin: 40px 10px 0 10px;
+    }
+}
+
+.footer-web{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: 40px 10px 0 10px;
+    &__item{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $textForBlack;
+        border-radius: 4px;
+        margin: 0 4px;
+    }
+}

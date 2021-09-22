@@ -1,0 +1,332 @@
+@import "fonts";
+@import "nullstyle";
+@import "color";
+@import "mixin";
+@import "burger";
+
+body{
+    position: relative;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.space{
+    width: 100%;
+}
+
+.link-edge{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    & > img{
+        margin-right: 10px;
+    }
+    & > a{
+        font-size: 14px;
+        line-height: 18px;
+        color: $textForBlack;
+        &:hover{
+            color: $textForImage;
+        }
+    }
+}
+
+.link{
+    &-calculate{
+        font-family: 'Open Sans';
+    }
+    &-tracking{
+        font-family: 'Open Sans Bold';
+    }
+    &-phone{
+        font-family: 'Open Sans';
+    }
+    &-email{
+        font-family: 'Open Sans';
+    }
+}
+
+.logo__image{
+    width: 200px;
+    height: auto;
+}
+
+h1{
+    font-family: 'Open Sans Bold';
+    text-transform: uppercase;
+    color: $textForImage;
+    text-align: center;
+    @include adaptiv-value("font-size", 48, 38, 1);
+}
+
+h2{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    color: $textForLight;
+    text-align: center;
+}
+
+.pseudo-title{
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+}
+
+.title-normal{
+    font-family: 'Open Sans Bold';
+    font-size: 16px;
+}
+
+.text-normal{
+    font-family: 'Open Sans Light';
+    font-size: 14px;
+    color: $textForLight;
+}
+
+.text-subtitle{
+    font-family: 'Open Sans';
+    font-size: 19px;
+    color: $textForLight;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.block-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > p{
+        text-align: center;
+    }
+}
+
+.block__forms{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form{
+    &__header{
+        width: 100%;
+        min-height: 60px;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title{
+        font-family: 'Open Sans Bold';
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $textForBlack;
+    }
+    &__subtitle{
+        font-family: 'Open Sans Semibold';
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $textForBlack;
+        margin-top: 5px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px 20px 15px;
+    }
+    &__button{
+        height: 54px;
+        background-color: $red;
+        border-radius: 6px;
+        color: #ffffff;
+        font-family: 'Open Sans Semibold';
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    &__input{
+        height: 51px;
+        font-family: 'Open Sans Light';
+        font-size: 13px;
+        color: $textFormInput;
+        border: 1px solid $borderForInput;
+        margin: 3px 0;
+        padding-left: 30px;
+    }
+    &__cancel{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -30px;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+.form-red{
+    width: 100%;
+    height: auto;
+    border: 1px solid $red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    &__image{
+        position: absolute;
+        top: -60px;
+    }
+    &__wrapper{
+        position: absolute;
+        bottom: -36px;
+        background-color: #ffffff;
+    }
+    &__button{
+        width: 177px;
+        margin: 10px;
+    }
+}
+
+.red-image{
+    &__wrapper{
+        background-color: #ffffff;
+    }
+    &__block{
+        width: 100px;
+        height: 100px;
+        border: 1px solid $red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+.input-general{
+    width: 100%;
+}
+
+.button-light{
+    width: 166px;
+    height: 43px;
+    background-color: transparent;
+    color: $textRed;
+    border: 1px solid $red;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Semibold';
+    font-size: 14px;
+}
+
+.backing{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $transperentDark;
+}
+
+.transperent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__wrapper{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    &__title{
+        font-family: 'Open Sans';
+        font-size: 30px;
+        color: $textForImage;
+        margin-top: 20px;
+        text-align: center;
+        z-index: 11;
+    }
+    &__text{
+        font-family: 'Open Sans Light';
+        font-size: 19px;
+        color: $textForImage;
+        padding: 0 100px;
+        text-align: center;
+        line-height: 27px;
+        margin-top: 20px;
+        z-index: 12;
+    }
+}
+
+.icon-left-open:before{ 
+    content: '\e800';
+    color: $textForImage;
+    font-size: 30px; 
+}
+
+.icon-right-open:before{ 
+    content: '\e801';
+    color: $textForImage;
+    font-size: 30px; 
+}
+
+.stels{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@import "base";
+@import "hero";
+@import "advan";
+@import "calc";
+@import "hot";
+@import "agent";
+@import "why";
+@import "feedback";
+@import "manager";
+@import "delivery";
+@import "team";
+@import "personal";
+@import "gallery";
+@import "location";
+@import "order";
+@import "extra";
+@import "news";
+@import "question";
+@import "footer";
+@import "media";
+@import "popup";
+
+.block-active{
+    transform: translate(0 , 0);
+    transition: all 0.6s ease 0s;
+    opacity: 1;
+}
+
+.anim-left{
+    transform: translate(-120% , 0);
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+}
+
+.anim-right{
+    transform: translate(120% , 0);
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+}

@@ -1,0 +1,101 @@
+.space__why{
+    width: 100%;
+    height: auto;
+    background-color: $grey;
+}
+
+.why{
+    width: 100%;
+    padding: 50px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__content{
+        display: grid;
+        grid-template: repeat(7, 1fr) / 1fr;
+    }
+    &__line{
+        width: 1px;
+        height: 85%;
+        border-left: 1px dashed $borderForInput;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.grid-why:nth-child(even){
+    .grid-why{
+        &__title{
+            text-align: start;
+        }
+        &__description{
+            text-align: start;
+        }
+        &__content{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        &__empty{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        &__image{
+            order: -1;
+        }
+    }
+    .why-number{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+}
+
+.grid-why{
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 30px 1fr;
+    margin-top: 25px;
+    &__content{
+        display: flex;
+    }
+    &__title{
+        color: $textRed;
+        text-align: end;
+        margin-bottom: 10px;
+    }
+    &__description{
+        text-align: end;
+    }
+    &__image{
+        margin: 0 15px;
+    }
+}
+
+.why-number{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    &__wrapper{
+        width: 28px;
+        height: 28px;
+        border: 1px solid $borderForInput;
+        border-radius: 50%;
+        background-color: $grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-row: 2 / 3;
+        z-index: 4;
+    }
+    &__text{
+        font-family: 'Open Sans Semibold';
+        font-size: 13px;
+        color: $borderForInput;
+    }
+}
+

@@ -1,0 +1,27 @@
+.space__advan{
+    background-color: $grey;
+    position: relative;
+}
+
+.advan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 50px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__image{
+        margin-bottom: 17px;
+    }
+    &__title{
+        margin-bottom: 10px;
+        color: $textRed;
+    }
+    &__text{
+        margin-bottom: 50px;
+    }
+    &__block{
+        max-width: 260px;
+    }
+}
+

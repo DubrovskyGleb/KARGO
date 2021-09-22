@@ -1,0 +1,113 @@
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease 0s;
+    overflow-y: auto;
+    z-index: 55;
+    &__body{
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        transition: all 0.6s ease 0s;
+    }
+    &__form{
+        position: relative;
+        box-shadow: 0px -2px 8px 0px rgba(255, 255, 255, 0.2);
+    }
+    &__description{
+        width: 80%;
+        text-align: center;
+        font-family: 'Open Sans Light';
+        font-size: 13px;
+        color: $textFormInput;
+        margin-top: 15px;
+    }
+    &__content{
+        background-color: $grey;
+    }
+    &__message{
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+        font-family: 'Open Sans Bold';
+        font-size: 16px;
+        color: $textForLight;
+        line-height: 25px;
+    }
+    &__message-const{
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Open Sans Bold';
+        font-size: 16px;
+        color: $textForLight;
+        line-height: 25px;
+    }
+    &__button{
+        width: 207px;
+        margin-top: 20px;
+    }
+    &__image{
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+    }
+    &__var{
+        color: $textFormInput;
+        font-family: 'Open Sans Bold';
+        text-align: center;
+        @include adaptiv-value("font-size", 24, 20, 1);
+        margin-top: 10px;
+    }
+}
+
+.popup__message.active-error{
+    display: block;
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-calculate{
+    max-width: 600px;
+}
+
+.form-monitoring{
+    max-width: 680px;
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    &__input{
+        width: 265px;
+        margin: 5px;
+    }
+}
+
+.form-success{
+    max-width: 350px;
+}
+
+.form-error{
+    max-width: 350px;
+}
+
+.form-result{
+    max-width: 350px;
+}
+
+.form-exactly{
+    max-width: 500px;
+}

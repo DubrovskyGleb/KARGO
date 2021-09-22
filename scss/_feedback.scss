@@ -1,0 +1,69 @@
+.space__feedback{
+    width: 100%;
+    background-color: white;
+}
+
+.feedback{
+    padding: 50px 0;
+}
+
+.feedback-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    &__image{
+        margin-bottom: 20px;
+    }
+    &__name{
+        margin-bottom: 20px;
+        color: $textForLight;
+        text-align: center;
+    }
+    &__contact{
+        margin-bottom: 20px;
+        font-family: 'Open Sans Semibold';
+        font-size: 14px;
+        color: $textRed;
+        text-align: center;
+    }
+    &__comment{
+        text-align: center;
+        line-height: 22px;
+    }
+}
+
+.slider-feedback{
+    &__wrapper{
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__chevrons{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        top: 24px;
+        z-index: 51;
+    }
+    &__chevron{
+        width: 30px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__blocks{
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+}

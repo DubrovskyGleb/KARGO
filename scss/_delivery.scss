@@ -1,0 +1,50 @@
+.space__delivery{
+    background-color: #ffffff;
+}
+
+.delivery{
+    width: 100%;
+    padding: 50px 0;
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+}
+
+.form-delivery{
+    width: 260px;
+    border: 1px solid $borderForInput;
+    margin: 40px 10px 40px 10px;
+    &__contant{
+        position: relative;
+    }
+    &__image{
+        position: absolute;
+        top: 12px;
+    }
+    &__text{
+        font-family: 'Open Sans Semibold';
+        font-size: 24px;
+        color: $textForLight;
+        margin-top: 83px;
+    }
+    &__button{
+        margin-top: 20px;
+    }
+}
+
+.form-tracking{
+    padding-top: 70px;
+    &__input{
+        width: 265px;
+        margin: 5px;
+    }
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

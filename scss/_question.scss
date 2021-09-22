@@ -1,0 +1,42 @@
+.space__question{
+    background: url(../img/base/background6.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.question{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.form-question{
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    z-index: 10;
+    &__content{
+        background-color: $transperentLight;
+    }
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    &__input-small{
+        width: 280px;
+        margin: 5px;
+    }
+    &__textarea{
+        width: 100%;
+        min-height: 65px;
+        resize: vertical;
+        padding: 20px 30px;
+        margin: 9px 0 0 0;
+    }
+    &__button{
+        width: 205px;
+    }
+
+}

@@ -1,0 +1,44 @@
+.space__extra{
+    background-color: $grey;
+}
+
+.extra{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    &__cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__block{
+        max-width: 200px;
+        position: relative;
+        margin: 0 23px 0 23px;
+    }
+    &__image{
+        position: absolute;
+    }
+    &__title{
+        margin-top: 110px;
+        color: $textForLight;
+    }
+}
+
+
+#extra-shop{
+    top: 37px;
+}
+#extra-box{
+    top: 35px;
+}
+#extra-notebook{
+    top: 43px;
+}
+#extra-people{
+    top: 47px;
+}
+#extra-armchair{
+    top: 43px;
+}

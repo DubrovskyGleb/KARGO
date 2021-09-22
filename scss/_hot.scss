@@ -1,0 +1,51 @@
+.space__hot{
+    background-color: $grey;
+}
+
+.hot{
+    width: 100%;
+    padding: 50px 0;
+    &__forms{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.form-hot{
+    width: 310px;
+    margin: 40px 15px 0 15px;
+    &__content{
+        background-color: white;
+        position: relative;
+    }
+    &__description{
+        width: 205px;
+        text-align: center;
+        font-family: 'Open Sans Light';
+        font-size: 13px;
+        color: $textFormInput;
+        margin-top: 15px;
+    }
+    &__button{
+        width: 205px;
+    }
+    &__text{
+        font-family: 'Open Sans Semibold';
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $textForLight;
+        margin-top: 70px;
+        text-align: center;
+    }
+    &__subtext{
+        font-family: 'Open Sans Semibold';
+        font-size: 28px;
+        text-transform: uppercase;
+        color: $textRed;
+        margin: 7px 0 15px 0;
+    }
+    &__image{
+        position: absolute;
+        top: 7px;
+    }
+}
